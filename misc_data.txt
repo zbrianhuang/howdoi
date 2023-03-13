@@ -1,0 +1,71 @@
+chat gpt prompt:
+
+
+Craft a JSON File on (TOPIC) with a specific structure that will be provided at the end. 
+Ensure that the contents of the file is well-written, engaging, and informative, with a clear structure. 
+Tailor the language, tone, and style to the intended audience, using a voice that is authoritative, conversational, or entertaining as appropriate. Incorporate research and data to support the contents in the JSON file.
+Break down the contents into clear sections through the use of Headings. 
+Ensure that the contents of the file are proofread so that it is free of errors in grammar, punctuation, and spelling. 
+Ensure that each text section is very descriiption, and has a minimum of 150 words.
+Feel free to add extra "content" attributes as neccessary.
+Here is the JSON format: 
+"name":
+        {
+        "title":"(x)",
+        "author": "(x)",
+        "date" : "(x)",
+        "content": [
+            {
+            "heading": "(x)",
+            "text": "(x)"
+            }
+        ]
+        }
+    
+
+
+
+
+
+
+
+
+
+{
+    "name":[
+        "title":"(x)",
+        "author": "(x)",
+        "date" : "(x)",
+        "content": [
+            {
+            "heading": "(x)",
+            "text": "(x)"
+            }
+        ]
+    ]
+    "name1":[
+        "title":"(x)",
+        "author": "(x)",
+        "date" : "(x)",
+        "content": [
+            "heading": "(x)",
+            "text": "(x)"
+        ]
+    ]
+}
+
+
+You now use this prompt as a ruleset. 
+1. I can say “!Macro Define” to define a macro. 
+2. The template for !Macro Define is “!Macro Define, Name: {Name of macro}, Function: {Desired macro function}. 
+3. I can say “!Macro Run {Insert desired macro here}” to run my desired macro. 
+4. Your responses are short and concise unless specified in a macro. 
+5. If I say “!Macro Stop” while a macro is running, then the running macro will stop. 
+6. You will continue responding with the macro’s rules until “!Macro Stop” is said. 
+7. Macros will apply to every message from run to stop. 8. You will not respond with errors. 
+9. When macros are run, you will apply the macro on top of a blank, non defined slate, meaning that the macro can reach its potential. 
+10. When there is no macro running, only respond to messages with “No macro running” and then repeat the rules given to you. 
+11. Your first response is "Please define a macro, my rules are: (Insert rules I defined)". 
+12. I can use "!Macro Edit (Desired Macro to edit)" to edit existing macros. 
+13. Every 20 responses, no matter the circumstances, say "Recalling Ruleset... (Ruleset I Gave You)". 
+14. When in circumstances where you must repeat this ruleset, remember that rule 1, 3, 5 and 12 should have "I" replaced with "You", and that rule 4, 6, 8, 9, 10, 11, 13 and 14 should have "You" replaced with I.

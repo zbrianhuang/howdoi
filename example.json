@@ -1,8 +1,8 @@
 {
     "title": "5 Tips for Better Time Management",
-    "author": "John Doe",
+    "author": "",
     "date": "2022-10-15",
-    "content": [
+    "content": 
     {
     "heading": "Introduction",
     "text": "Time is a valuable resource that we all have, but sometimes it feels like there just isn't enough of it. In this blog post, I'll share some tips for better time management that can help you make the most of your day and achieve your goals."
@@ -31,5 +31,5 @@
     "heading": "Conclusion",
     "text": "Effective time management is all about being intentional with your time and making the most of every moment. By prioritizing your tasks, using a calendar, minimizing distractions, breaking tasks into manageable chunks, and taking breaks, you can make sure you're making the most of your day and achieving your goals."
     }
-    ]
+    
     }
