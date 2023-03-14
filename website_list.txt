@@ -1,4 +1,9 @@
 ./website/HowtoRunthe200mFaster.html
 ./website/SamsungvsAppleTheBattleforSmartphoneDominance.html
-./website/HowtoRunthe200mFaster.html
-./website/SamsungvsAppleTheBattleforSmartphoneDominance.html
+./website/BadukAGuidetotheAncientKoreanGame.html
+./website/TheHistoryofCeramicsFromAncientTimestoModernArt.html
+./website/DeodorantMythsDebunked.html
+./website/TheEffectsofImperialisminEurope.html
+./website/Top8PeopleinHistory.html
+./website/HowPaperisMade.html
+./website/HowtoMakeaCheesecake.html

@@ -2,14 +2,14 @@
 <html>
 <head>
 	<title>My Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./website/style.css">
 </head>
 <body>
 	<header>
 		<nav>
 			<ul>
 				<li><a href="./index.html">Home</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="./about.html">About</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 			<a href="#">Log In</a>
@@ -18,7 +18,7 @@
 	<main>
 		<p>
 		<?php
-			$lines=array();
+			$siteLinks=array();
 			$fp=fopen('./website_list.txt', 'r');
 			while (!feof($fp))
 			{
@@ -28,14 +28,27 @@
 				$line=trim($line);
 			
 				//add to array
-				$lines[]=$line;
+				$siteLinks[]=$line;
 			
 			}
 			fclose($fp);
-			$linkTitle="filler";
-			for($i= 0;$i<count($lines)-1;$i++){
-				echo "<a href='",$lines[$i],"'>",$linkTitle,$i,"</a>";
-				echo"<br>";
+			$siteTitles=array();
+			$fp=fopen('./website_titles.txt', 'r');
+			while (!feof($fp))
+			{
+				$line=fgets($fp);
+			
+				//process line however you like
+				$line=trim($line);
+			
+				//add to array
+				$siteTitles[]=$line;
+			
+			}
+			fclose($fp);
+			for($i= 0;$i<count($siteLinks)-1;$i++){
+				echo "<a class='button' href='",$siteLinks[$i],"'>",$siteTitles[$i],"</a>";
+				echo"<br><br><br>";
 			}
 			?>
 			

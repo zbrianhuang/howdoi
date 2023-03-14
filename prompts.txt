@@ -1,0 +1,93 @@
+When deleting a file, check:
+    website_titles.txt 
+    website_list.txt
+    log.txt
+    /website/deleted-file.html
+
+
+
+chat gpt prompt:
+
+bonus:
+Please finish write 
+
+v3
+
+
+
+As an experienced JSON writer, your task is to create a JSON file that is both informative and engaging on the topic given to you. The JSON file should be optimized for search engine efficiency, using keywords and phrases that are relevant to the topic.
+To accomplish this, you will need to incorporate research and data into the file to support the contents. Each section should be broken down into clear headings to make it easier for readers to navigate.
+The JSON file should adhere to the following structure:
+"name":
+        {
+        "title":"(x)",
+        "author": "(x)",
+        "content": [
+            {
+            "heading": "(x)",
+            "text": "(x)"
+            }
+        ]
+        }
+Each section of the JSON file should be well-researched and written in a clear, concise, and engaging style. The language, tone, and style should be tailored to the intended audience, whether that be a general audience or a more specialized audience.
+Ensure that each "text" attribute contains a minimum of 100 words, and that the "name" tag which appears at the beginning is replaced with the value of the "title" tag.
+Feel free to add extra "contents" attributes as necessary to include additional information or data that supports the contents of the JSON file, but have a minimum of 6. Finally, proofread the JSON file to ensure that it is free of errors in grammar, punctuation, and spelling.
+However, the final "content" attribute should always be titled Conclusion.
+Note that there should be absolutely no mention of JSON files in the contents of the writings. 
+Ensure you always prompt me for the topic.
+
+v2
+
+Craft a JSON File on (Topic) with a specific structure that will be provided at the end. 
+Ensure that the contents of the file is well-written, engaging, and informative, with a clear structure. 
+Tailor the language, tone, and style to the intended audience, using a voice that is authoritative, conversational, or entertaining as appropriate. Incorporate research and data to support the contents in the JSON file.
+Ensure that the text is optimal for search engine efficiency. 
+Break down the contents into clear sections through the use of Headings. 
+Ensure that the contents of the file are proofread so that it is free of errors in grammar, punctuation, and spelling. 
+Ensure that each text section has plenty of description, and make it as long as possible.
+Feel free to add extra "content" attributes as necessary.
+Make sure the "name" tag is the same as the "title" tag
+Here is the JSON format: 
+"name":
+        {
+        "title":"(x)",
+        "author": "(x)",
+        "date" : "(x)",
+        "content": [
+            {
+            "heading": "(x)",
+            "text": "(x)"
+            }
+        ]
+        }
+
+v1
+
+Craft a JSON File on (TOPIC) with a specific structure that will be provided at the end. 
+Ensure that the contents of the file is well-written, engaging, and informative, with a clear structure. 
+Tailor the language, tone, and style to the intended audience, using a voice that is authoritative, conversational, or entertaining as appropriate. Incorporate research and data to support the contents in the JSON file.
+Break down the contents into clear sections through the use of Headings. 
+Ensure that the contents of the file are proofread so that it is free of errors in grammar, punctuation, and spelling. 
+Ensure that each text section is very descriiption, and has a minimum of 150 words.
+Feel free to add extra "content" attributes as neccessary.
+Here is the JSON format: 
+"name":
+        {
+        "title":"(x)",
+        "author": "(x)",
+        "date" : "(x)",
+        "content": [
+            {
+            "heading": "(x)",
+            "text": "(x)"
+            }
+        ]
+        }
+    
+
+
+
+
+
+
+

@@ -17,7 +17,7 @@ def createHtmlFile(inputJson):
 		<nav>
 			<ul>
 				<li><a href="../index.html">Home</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="../about.html">About</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 			
@@ -27,7 +27,9 @@ def createHtmlFile(inputJson):
         <p>By: {{author}}</p>
         {{body}}
         </main>
-        <footer></footer>
+        <footer>
+		<p>All Rights Reserved. &copy; 2023 How Do I. </p>
+	</footer>
     </body>
 </html>
 """
@@ -43,7 +45,7 @@ def createHtmlFile(inputJson):
     with open('names.json') as json_file:
         names= json.load(json_file)
 
-    author=names["first_names"][random.randrange(40)]+" "+names["last_names"][random.randrange(40)]
+    author=names["first_names"][random.randrange(49)]#+" "+names["last_names"][random.randrange(40)]
 
     #input file
     data = inputJson
@@ -57,7 +59,7 @@ def createHtmlFile(inputJson):
 
         strbuilder+=bodyT.render(i)+"\n"
     data['body']=strbuilder
-
+    data['author']=author
 
 
     outputFile = Template(html_template)
@@ -67,13 +69,11 @@ def createHtmlFile(inputJson):
         fileName=fileName.replace(" ","")
         fileName = ''.join([i for i in fileName if i.isalnum()])
         fileName="./website/"+fileName+ext
-        print(fileName)
 
         return fileName
 
     #write to file
     output_directory=createFileName(data,".html")
-    print(output_directory)
     with open(output_directory, "w") as output:
         output.write(outputFile.render(data))
         output.close()
@@ -81,4 +81,9 @@ def createHtmlFile(inputJson):
         output.write(output_directory)
         output.write("\n")
         output.close()
+    with open("website_titles.txt","a") as output:
+        output.write(data["title"])
+        output.write("\n")
+        output.close()
+    print("'"+data["title"] +"' successfully created")
 

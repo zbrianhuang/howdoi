@@ -8,7 +8,6 @@ def main():
         json_file.close()
     
     counter = 0
-    print(content["Sprinting"].keys())
     for objects in content:
         
         createHtmlFile(content[objects])
@@ -18,8 +17,8 @@ def main():
         f.write("\n")
         f.close()
     with open('content.json', 'w'):
-        print("uhoh")
-        #f.write()
+        print("data in 'content.json' successfully deleted")
+        f.write({})
 
 
 main()
