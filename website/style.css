@@ -71,6 +71,8 @@ article h2 {
 
 article p {
   margin-bottom: 10px;
+  line-height: 2;
+  font-size:calc(11px + 0.3vw);
 }
 
 /* Style the footer */

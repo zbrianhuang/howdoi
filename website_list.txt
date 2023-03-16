@@ -7,3 +7,11 @@
 ./website/Top8PeopleinHistory.html
 ./website/HowPaperisMade.html
 ./website/HowtoMakeaCheesecake.html
+./website/HistoryofSpain.html
+./website/HowtoThrowaFrisbee.html
+./website/InterestingBirdsinNewJersey.html
+./website/FunthingstodoonSaturdayinEurope.html
+./website/TheGameofBadukStrategyTacticsandHistory.html
+./website/6BestAppleProductsforYourNeeds.html
+./website/DebunkingCommonMythsaboutDeodorants.html
+./website/CarMythsDebunkedSeparatingFactfromFiction.html

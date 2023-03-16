@@ -10,7 +10,10 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "justMyCode": true
+            "justMyCode": true,
+            "env":{
+                "yuh": "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"
+            }
         }
     ]
 }
