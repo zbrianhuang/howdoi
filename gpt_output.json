@@ -1,45 +1,33 @@
 
 
 {
-    "Car myths debunked": {
-        "title": "Car Myths Debunked: Separating Fact from Fiction",
+    "Source 2 in CSGO": {
+        "title": "How Source 2 has revolutionized Counter-Strike: Global Offensive",
         "author": "leave blank",
         "content": [
             {
-                "heading": "Myth #1: Red cars cost more to insure",
-                "text": "Contrary to popular belief, the color of your car has no impact on your insurance premiums. Factors that actually affect your premiums include your driving record, age, gender, and the type of car you drive."
+                "heading": "Introduction",
+                "text": "In 2012, Valve Corporation launched the Source 2 game engine, which completely transformed the gaming experience for players. It was not until six years later that this engine was implemented in CSGO, taking the game to a whole new level."
             },
             {
-                "heading": "Myth #2: You need to change your oil every 3,000 miles",
-                "text": "While this used to be true, modern cars can often go between 7,500 and 10,000 miles before an oil change is necessary. Consult your owner's manual to determine the recommended mileage."
+                "heading": "Increased Framerates and Performance Optimization",
+                "text": "The implementation of Source 2 brought forth a wave of modernized graphics and increased framerates, making the game run impressively smooth. Not only that, but the engine also brought optimizations to network performance and loading times, significantly enhancing user experience."
             },
             {
-                "heading": "Myth #3: Premium gas is better for your car",
-                "text": "Unless your car specifically requires premium gas, using it instead of regular will not provide any additional benefits. In fact, it could actually harm your car and waste money in the process."
+                "heading": "Improved Visuals and Artistic Quality",
+                "text": "Source 2 enabled CSGO to have advanced lighting and shading techniques, resulting in highly realistic-looking environments. The engine also gave designers more tool options to create more realistic maps and characters."
             },
             {
-                "heading": "Myth #4: You should warm up your car before driving in cold weather",
-                "text": "This myth has been around for decades, but it is actually unnecessary and can even be harmful to your car's engine. Simply driving your car gently for a few minutes is all the warming up it needs."
+                "heading": "Improved Physics and Weapon Mechanics",
+                "text": "The implementation of Source 2 improved the physics engine within CSGO, making realistic gameplay more achievable. Moreover, weapon mechanics were improved, allowing players to experience more realistic and satisfying gunplay."
             },
             {
-                "heading": "Myth #5: All-wheel drive is always better than two-wheel drive",
-                "text": "While all-wheel drive can provide better traction in certain conditions, it is not always necessary or advantageous. Front-wheel drive can offer better fuel economy and lower overall cost."
-            },
-            {
-                "heading": "Myth #6: New cars are always better than used cars",
-                "text": "While new cars certainly have their own benefits, used cars can offer a more affordable and reliable option for many drivers. With proper research and inspection, a used car can be just as reliable as a new car."
-            },
-            {
-                "heading": "Myth #7: More horsepower is always better",
-                "text": "While horsepower can provide a more exciting driving experience, it is not always necessary or practical. For everyday driving, a lower horsepower car can offer better fuel economy and lower overall cost."
-            },
-            {
-                "heading": "Myth #8: You should always follow the manufacturer's recommended service schedule",
-                "text": "While the manufacturer's recommended service schedule is a good guideline, it is not always necessary or optimal. Depending on your driving habits and the conditions you drive in, some services may need to be performed more or less frequently."
+                "heading": "Increasing Community Engagement",
+                "text": "Source 2 improved CSGO's modding capabilities, allowing creators to experiment with game mechanics and features while the Integration of Steam Workshop made sharing creative works more accessible. This increased engagement from the community in the form of user-generated content and maps."
             },
             {
                 "heading": "Conclusion",
-                "text": "There are many car myths out there, and it is important to separate fact from fiction when it comes to caring for your vehicle. By understanding the truth behind these common myths, you can make informed decisions that will help keep your car running smoothly for years to come."
+                "text": "Source 2 has had an incredibly positive effect on CSGO, improving player experience, increasing engagement, and providing a gateway for more mods and user-generated content. Its implementation has breathed new life into the game and continues to keep it relevant years after its initial release."
             }
         ]
     }

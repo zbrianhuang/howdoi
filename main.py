@@ -4,8 +4,8 @@ from script import createHtmlFile
 from chatapi import getWebsiteJson
 def main():
     start_time = time.perf_counter()
-    topicList=["Car myths debunked"]
-    attributesList=[8]
+    topicList=["Source 2 in CSGO"]
+    attributesList=[5]
     getWebsiteJson(topicList[0],attributesList[0])
     json_data=""
     with open('content.json') as json_file:

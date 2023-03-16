@@ -15,3 +15,6 @@
 ./website/6BestAppleProductsforYourNeeds.html
 ./website/DebunkingCommonMythsaboutDeodorants.html
 ./website/CarMythsDebunkedSeparatingFactfromFiction.html
+./website/CoolFactsaboutKarambits.html
+./website/CoolFactsAboutErasers.html
+./website/HowSource2hasrevolutionizedCounterStrikeGlobalOffensive.html
