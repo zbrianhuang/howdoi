@@ -1,3 +1,6 @@
+#TODO
+#make text section a little less redundant ( stop restating topic), make it more relatvant with past info)
+
 import json
 import time
 from pweb_template import createHtmlFile
