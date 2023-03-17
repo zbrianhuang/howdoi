@@ -18,3 +18,7 @@
 ./website/CoolFactsaboutKarambits.html
 ./website/CoolFactsAboutErasers.html
 ./website/HowSource2hasrevolutionizedCounterStrikeGlobalOffensive.html
+./website/AllYouNeedtoKnowAboutBasketball.html
+./website/Pickleball.html
+./website/AllYouNeedtoKnowAbouttheHorseshoesGame.html
+./website/MacvsWindowsWhichistheBetterOperatingSystem.html

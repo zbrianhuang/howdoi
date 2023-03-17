@@ -1,11 +1,11 @@
 import json
 import time
-from script import createHtmlFile
-from chatapi import getWebsiteJson
+from pweb_template import createHtmlFile
+from pchatapi import getWebsiteJson
 def main():
     start_time = time.perf_counter()
-    topicList=["Source 2 in CSGO"]
-    attributesList=[5]
+    topicList=["Mac vs Windows"]
+    attributesList=[15]
     getWebsiteJson(topicList[0],attributesList[0])
     json_data=""
     with open('content.json') as json_file:

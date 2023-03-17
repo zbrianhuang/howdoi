@@ -113,3 +113,12 @@ a:hover {
   color: #fff;
   background-color: #1E90FF;
 }
+
+img{
+  display:block;
+   height: auto;
+    width: 75vw;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
