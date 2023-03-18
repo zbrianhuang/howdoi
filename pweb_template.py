@@ -2,7 +2,7 @@ import os
 from jinja2 import Template
 import json
 import random
-from pixabay import getImg
+from pixabay import getImg,bingSearch
 from pchatapi import apiCall,openAIObjecttoDict
 def createHtmlFile(inputJson):
     #define templates
@@ -26,6 +26,7 @@ def createHtmlFile(inputJson):
 	    </header>
         <main>
         <img src="{{img}}">
+        <h1>{{title}}</h1>
         <p>By: {{author}}</p>
         {{body}}
         </main>
@@ -66,10 +67,17 @@ def createHtmlFile(inputJson):
     imgDict = openAIObjecttoDict( apiCall(2,data['title'],"",""))
     print("test"+json.dumps(imgDict))
     if str(imgDict["content"])[:5] == "genre:":
-
-        image_loc = getImg(str(imgDict["content"])[5:])["name"]
+        try:
+            image_loc = bingSearch(str(imgDict["content"])[5:])["name"]          
+            
+        except:
+            image_loc = getImg(str(imgDict["content"])[5:])["name"]
     else:
-        image_loc = getImg(str(imgDict["content"]))["name"]
+        try:
+            image_loc = bingSearch(str(imgDict["content"]))["name"]
+            
+        except:
+            image_loc = getImg(str(imgDict["content"]))["name"]
 
     #put everything together
     data['body']=strbuilder
@@ -101,40 +109,4 @@ def createHtmlFile(inputJson):
         output.write("\n")
         output.close()
     print("'"+data["title"] +"' successfully created")
-
-
-tempjson={
-        "title": "All You Need to Know About the Horseshoes Game",
-        "author": "leave blank",
-        "content": [
-            {
-                "heading": "Introduction to Horseshoes",
-                "text": "Horseshoes is a classic lawn game that has been enjoyed by millions of people around the world. This game involves tossing horseshoes towards a metal stake, with the aim of getting it as close as possible to the stake. The game is simple, yet challenging, and can be enjoyed by people of all ages and skill levels."
-            },
-            {
-                "heading": "The History of Horseshoes",
-                "text": "The history of horseshoes can be traced back to ancient Greece, where it was believed to have been played by soldiers. It is said to have been brought to the United States during the 19th century, where it gained widespread popularity. Today, the game is played in backyards, parks, and even professional leagues around the world."
-            },
-            {
-                "heading": "How to Play Horseshoes",
-                "text": "To play horseshoes, you need two metal stakes and four horseshoes. The stakes should be placed 40 feet apart. Players then take turns tossing horseshoes towards the opposite stake, with the aim of getting them as close as possible. Points are awarded depending on how close the horseshoe is to the stake."
-            },
-            {
-                "heading": "Horseshoes Strategy",
-                "text": "To be successful at horseshoes, players need to develop a solid strategy. This includes things like choosing the right horseshoe, aiming for specific parts of the stake, and adjusting for wind and other environmental factors. The best way to develop a winning strategy is through practice and experience."
-            },
-            {
-                "heading": "Horseshoes Equipment",
-                "text": "To play horseshoes, you need several pieces of equipment. This includes horseshoes, metal stakes, and a throwing area. Horseshoes are made from various materials, including steel, aluminum, and plastic. It is important to choose the right horseshoe for your skill level and playing style."
-            },
-            {
-                "heading": "Horseshoes Rules and Variations",
-                "text": "There are several variations of horseshoes, each with their own set of rules. Some popular variations include classic horseshoes, quoits, and ring toss. It is important to familiarize yourself with the rules of the specific variation you are playing before beginning a game."
-            },
-            {
-                "heading": "Conclusion",
-                "text": "Horseshoes is a fun and challenging game that can be enjoyed by players of all ages and skill levels. Whether you are playing at a backyard BBQ or in a professional league, horseshoes is sure to provide hours of entertainment. So why not give it a try and see for yourself how much fun it can be?"
-            }
-        ]
-    }
 

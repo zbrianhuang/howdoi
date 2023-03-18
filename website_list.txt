@@ -22,3 +22,11 @@
 ./website/Pickleball.html
 ./website/AllYouNeedtoKnowAbouttheHorseshoesGame.html
 ./website/MacvsWindowsWhichistheBetterOperatingSystem.html
+./website/KoreanWarSummarized.html
+./website/Reviewingandanalyzingdifferenttypesofmineralwaterfromvarioussources.html
+./website/ReviewingandAnalyzingDifferentTypesofMineralWaterfromVariousSources.html
+./website/DIYHydroponicsforSmallApartments.html
+./website/HowtoCreateaDIYHydroponicSystemforGrowingHerbsinaSmallApartment.html
+./website/TipsonHowtoDismantletheHolyRomanEmpireinEU4.html
+./website/HowtoBakeSourdoughBreadUsingWildYeast.html
+./website/HowtoBakeSourdoughBreadUsingWildYeastfromYourLocalEnvironment.html

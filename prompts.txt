@@ -10,7 +10,7 @@ chat gpt prompt:
 
 v2.2c
 Only responding with the answer and without punctuation, classify this phrase into a genre: (topic)
-
+Without giving any context and responding with only one word, generalize the following phrase: The Game of Baduk: Strategy, Tactics, and History
 
 v2.2b (reduced token count)
 You are hired to write a subheading for a website. The topic and sub-heading title are provided. Write engaging, informative, and well-written content that is relevant to the website's topic, tailored to the audience's language, tone, and style. Write in the third person. Use research and data to support your writing. Ensure that the content fits the website's broader narrative, and keep it interesting by including anecdotes or a compelling narrative. Don't restate the sub-heading title at the start of your response. Write at least 250 words. Your goal is to make the sub-heading interesting and encourage readers to explore more of the website's content.\nTopic: Subheading:
