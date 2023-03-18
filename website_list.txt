@@ -30,3 +30,17 @@
 ./website/TipsonHowtoDismantletheHolyRomanEmpireinEU4.html
 ./website/HowtoBakeSourdoughBreadUsingWildYeast.html
 ./website/HowtoBakeSourdoughBreadUsingWildYeastfromYourLocalEnvironment.html
+./website/HowtoBakeSourdoughBreadUsingWildYeastFromYourLocalEnvironment.html
+./website/HowtoCreateaMarchinEU4.html
+./website/HowtocreateamarchanduseittoyouradvantageinEU4.html
+./website/BuildaCustomPCforGaming.html
+./website/HowtoBuildaCustomPCforGaming.html
+./website/BuildingaCustomPCforGaming.html
+./website/BuildingaCustomPCforOptimalGamingPerformance.html
+./website/KnittingaComplexLaceShawl.html
+./website/HowtoMakeYourOwnKombucha.html
+./website/HowtoMakeYourOwnArtisanalBittersweetChocolateUsingNaturalIngredients.html
+./website/EmbroideryDesignsonDenimJackets.html
+./website/HowtomakeyourownartisanalkimchiusingtraditionalKoreanmethods.html
+./website/HowtoMakeYourOwnArtisanalNaturalDeodorantUsingBakingSodaandArrowrootPowder.html
+./website/ElectricHovercraftDesignandBuild.html

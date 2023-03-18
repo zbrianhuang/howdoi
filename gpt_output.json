@@ -1,49 +1,49 @@
 
 
 {
-    "sourdough_bread": {
-        "title": "How to Bake Sourdough Bread Using Wild Yeast from Your Local Environment",
+    "Electric Hovercraft Design and Build": {
+        "title": "Electric Hovercraft Design and Build",
         "author": "leave blank",
         "content": [
             {
-                "heading": "Introduction to Sourdough Bread",
-                "text": "Sourdough bread is a popular type of bread that has been made for centuries. Unlike traditional bread, sourdough bread uses wild yeast to ferment the dough. This gives the bread a unique taste and texture that cannot be replicated with commercial yeast."
+                "heading": "Introduction",
+                "text": "Hovercrafts are fascinating machines that glide over a cushion of air. With the advent of electric motors, it is now possible to design and build your own customized electric hovercraft. Here is a step-by-step guide."
             },
             {
-                "heading": "Finding Wild Yeast",
-                "text": "The first step to baking sourdough bread is to find wild yeast from your local environment. This can be done by leaving a mixture of water and flour exposed to the air for several days. Eventually, the mixture will start to ferment and you will have captured wild yeast. Alternatively, you can use fruit or vegetables, such as grapes or cabbage, to create a starter."
+                "heading": "Step 1: Choose the right materials",
+                "text": "Select materials that are light-weight and durable. For example, fibreglass or carbon fibre for the body, aluminium or steel for the frame."
             },
             {
-                "heading": "Creating a Starter",
-                "text": "Once you have captured wild yeast, you can create a starter by mixing it with flour and water. The mixture will need to be fed regularly to keep the yeast alive and active. After a few days, your starter will be ready to use for baking."
+                "heading": "Step 2: Design the body",
+                "text": "The body of the hovercraft should be aerodynamically designed so that it glides over the air cushion, reducing the resistance. To achieve this, ensure that the body has a streamlined shape and is low-slung."
             },
             {
-                "heading": "Making the Dough",
-                "text": "To make the sourdough bread dough, mix flour, water, and salt together in a bowl. Add a portion of your starter to the mixture and knead the dough until it becomes smooth and elastic. Let the dough rest for several hours to allow it to rise."
+                "heading": "Step 3: Build the Air Cushion",
+                "text": "The air cushion is made by a fan that blows air into the cavity underneath the hovercraft. This cavity should be lined with a skirt made of airtight material that allows the cushion to be contained."
             },
             {
-                "heading": "Shaping and Proofing the loaf",
-                "text": "After the dough has risen, shape it into the desired loaf shape and let it proof for one to two hours in a warm, draft-free location. The longer the proofing time, the more sour the bread will taste."
+                "heading": "Step 4: Install the Motor",
+                "text": "As the hovercraft will be propelled by electric motors, it’s important to use a high-quality motor that is designed to withstand the harsh environment. The motor should be secured to the frame with adequate vibration damping."
             },
             {
-                "heading": "Baking the Bread",
-                "text": "Preheat your oven to 450 degrees Fahrenheit, and place the bread in the oven on a baking sheet. Bake for 30-35 minutes, or until the crust is golden brown and the internal temperature reaches 190-200 degrees Fahrenheit."
+                "heading": "Step 5: Install Control System",
+                "text": "The hovercraft is controlled with a rudder, which directs the air flow from the fan. The rudder is attached to servo motors that control the direction and magnitude of the air flow."
             },
             {
-                "heading": "Storing and Using Starter",
-                "text": "Store your sourdough starter in the refrigerator if you don't plan to use it for a few days. Otherwise, feed it once a day to keep it active. You can also use the starter to make other types of baked goods, such as pancakes or muffins."
+                "heading": "Step 6: Install Batteries and Speed Controllers",
+                "text": "Electric hovercraft requires batteries, and speed controllers to control the power to the motor. Ensure that batteries and speed controllers are of high quality and are compatible with the motor."
             },
             {
-                "heading": "Tips for Success",
-                "text": "It may take several attempts to perfect your sourdough bread recipe. Be patient, and don't be afraid to experiment with different ratios of flour, water, and starter. Make sure your oven is properly heated before baking, and monitor the internal temperature of the bread to ensure it is fully cooked."
+                "heading": "Step 7: Testing and Fine-tuning",
+                "text": "Once the hovercraft is complete, you need to test and fine-tune it to ensure that it performs optimally. This may involve adjusting the rudder, measuring the speed and adjusting the motor and battery settings."
             },
             {
-                "heading": "Variations and Additions",
-                "text": "You can add a variety of ingredients to your sourdough bread dough to enhance its flavor, such as herbs or spices. You can also vary the type of flour you use, such as using whole wheat flour for a nuttier taste. Don't be afraid to experiment and make the recipe your own."
+                "heading": "Step 8: Safety Precautions",
+                "text": "Hovercraft can be dangerous, hence ensure you take all necessary safety precautions. This includes wearing protective gear such as helmets, ensuring that the hovercraft is in good condition, and adhering to local regulations."
             },
             {
                 "heading": "Conclusion",
-                "text": "Baking sourdough bread with wild yeast from your local environment is a fun and rewarding experience. Not only does it produce a unique and delicious bread, but it also connects you to the natural world around you. With patience and practice, anyone can become a skilled sourdough bread baker."
+                "text": "Designing and building an electric hovercraft requires some technical knowledge and a lot of attention to detail. However, with the right approach, it is possible to build your own customized electric hovercraft that will provide you with hours of fun and adventure."
             }
         ]
     }

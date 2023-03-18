@@ -64,14 +64,14 @@ def createHtmlFile(inputJson):
 
 
     #retrive img data
-    imgDict = openAIObjecttoDict( apiCall(2,data['title'],"",""))
+    imgDict = openAIObjecttoDict( apiCall(2,data['title'],"","",[]))
     print("test"+json.dumps(imgDict))
-    if str(imgDict["content"])[:5] == "genre:":
+    if str(imgDict["content"])[:5] == "noun:":
         try:
-            image_loc = bingSearch(str(imgDict["content"])[5:])["name"]          
+            image_loc = bingSearch(str(imgDict["content"])[4:])["name"]          
             
         except:
-            image_loc = getImg(str(imgDict["content"])[5:])["name"]
+            image_loc = getImg(str(imgDict["content"])[4:])["name"]
     else:
         try:
             image_loc = bingSearch(str(imgDict["content"]))["name"]

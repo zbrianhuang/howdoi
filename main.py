@@ -7,7 +7,7 @@ from pweb_template import createHtmlFile
 from pchatapi import getWebsiteJson
 def main():
     start_time = time.perf_counter()
-    topicList=["How to bake sourdough bread using wild yeast from your local environment"]
+    topicList=["How to design and build your own customized electric hovercraft"]
     attributesList=[10]
     getWebsiteJson(topicList[0],attributesList[0])
     json_data=""
@@ -16,11 +16,11 @@ def main():
         content= json.loads(json_data)
         json_file.close()
     
-    counter = 0
+    
     for objects in content:
         
         createHtmlFile(content[objects])
-        counter+=1
+        
     with open("log.txt", 'a') as f:
         f.write(json.dumps(content))
         f.write("\n")
