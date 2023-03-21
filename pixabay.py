@@ -16,17 +16,16 @@ def bingSearch(keyword):
         search_url = "https://api.bing.microsoft.com/v7.0/images/search"
         header = {"Ocp-Apim-Subscription-Key":bing_apikey}
         params = {
-            "q":keyword,
+            "q":keyword.strip("\n"),
             "count":numResults,
             "license":"ShareCommercially"
             }
-        print(bing_apikey)
         response= requests.get(search_url,headers = header,params=params)
         img_dict = json.loads(response.text)
         #print(json.dumps(img_dict))
         finalImg= img_dict["value"][random.randint(0,numResults-1)]
         url = finalImg["contentUrl"]
-        img_path = "images/"+finalImg["imageId"]+url[-4:]
+        img_path = "images/"+finalImg["imageId"]+(url[-4:]).lower()
         pypath = "website/"+img_path #bc its outside the websites folder
         with open(pypath, 'wb') as handler:
             img = requests.get(url)
@@ -62,7 +61,7 @@ def getImg(keyword):
         api_result = json.loads(unparsed)
         print(api_result["hits"][0])
         url=api_result["hits"][0]["largeImageURL"]
-        img_path = "images/"+api_result["hits"][0]["user"][:1]+str(api_result["hits"][0]["id"]*api_result["hits"][0]["user_id"])+url[-4:]
+        img_path = "images/"+api_result["hits"][0]["user"][:1]+str(api_result["hits"][0]["id"]*api_result["hits"][0]["user_id"])+(url[-4:]).lower()
         pypath = "website/"+img_path #bc its outside the websites folder
         with open(pypath, 'wb') as handler:
             img = requests.get(url)

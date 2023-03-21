@@ -10,6 +10,7 @@ def createHtmlFile(inputJson):
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>{{title}}</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
@@ -40,6 +41,9 @@ def createHtmlFile(inputJson):
     <article id="{{heading}}">
         <h2>{{heading}}</h2>
         <p>{{text}}</p>
+    </article>
+    <article class="ad-space">
+    <p>ad space</p>
     </article>
     """
 

@@ -8,6 +8,20 @@ When deleting a file, check:
 
 chat gpt prompt:
 
+v2.2d
+Create a json with (NUM) unique article titles about "(TOPIC)" in the following format:
+{
+"Topics":[
+{
+title:(x)
+},
+{
+title:(x)
+}
+]
+} 
+Do not respond with anything other than the actual json file. Make sure the responses relate to the main idea. Additionally, Make sure there is no description, and ensure that each "title" property starts with "How to". 
+
 v2.2c
 Only responding with the answer and without punctuation, classify this phrase into a genre: (topic)
 Without giving any context and responding with only one word, generalize the following phrase: The Game of Baduk: Strategy, Tactics, and History

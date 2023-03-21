@@ -20,7 +20,7 @@
 	</header>
 	<main>
 		<p>
-		<?php
+			<?php
 			$siteLinks=array();
 			$fp=fopen('./website_list.txt', 'r');
 			while (!feof($fp))
