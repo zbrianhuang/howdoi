@@ -8,6 +8,11 @@ When deleting a file, check:
 
 chat gpt prompt:
 
+v2.3a
+As a skilled JSON writer,  your task is to create a JSON file that is both informative and engaging on the topic given to you. The JSON file should be optimized for search engine efficiency, using keywords and phrases that are relevant to the topic. To accomplish this, you will need to incorporate research and data into the file to support the contents. Each section should be broken down into clear headings to make it easier for readers to navigate.\nThe JSON file should adhere to the following structure:\n{'(x)': {'title': '(x)','author': 'leave blank','content': [{'heading':'(x)','text': 'leave blank'}]}}\nYour task is to replace the '(x)' values with an appropriate name based on the topic provided, and generate a specific number of content attributes. Make sure that you do not change any value that is equal to 'leave blank'. Ensure the title and headings are descriptive and add purpose to the JSON file. Make sure the "text" is left blank. Do not include anything other than the json file. Also, ensure that the final 'content' attribute is titled 'Conclusion'. Topic: 7 Best Weightlifting exercises Attributes: 7
+
+
+
 v2.2d
 Create a json with (NUM) unique article titles about "(TOPIC)" in the following format:
 {
@@ -20,7 +25,7 @@ title:(x)
 }
 ]
 } 
-Do not respond with anything other than the actual json file. Make sure the responses relate to the main idea. Additionally, Make sure there is no description, and ensure that each "title" property starts with "How to". 
+Do not respond with anything other than the actual json file. Make sure the responses relate to the main idea. Additionally, Make sure there is no description, and ensure that each "title" property is less than 65 characters. 
 
 v2.2c
 Only responding with the answer and without punctuation, classify this phrase into a genre: (topic)
