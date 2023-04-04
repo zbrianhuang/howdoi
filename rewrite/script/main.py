@@ -27,7 +27,8 @@ def main(numAttribute,fileLoc):
         current_topic = topicDict["Topics"][i]["title"]
         print("INFO: Generating Topic "+str(i+1)+"/" +str(total_topic_count)+": "+current_topic)
         start_time = time.perf_counter()
-        getWebsiteJson(current_topic,numAttribute)
+        website_json = getWebsiteJson(current_topic,numAttribute)
+        
         end_time=time.perf_counter()
         print("INFO: "+current_topic+f" completed in {end_time-start_time:0.4f} seconds")
         '''try:
@@ -66,7 +67,46 @@ def getWebsiteJson(topic,attributes):
     end_time = time.perf_counter()
     print("INFO: Webpage: '"+topic +f"' content created in {end_time-start_time:0.4f} seconds")
     return jsonFrame
-    
+
+def createPage(jsonInput):
+    print()
+    html_template="""
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title}}</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			
+		    </nav>
+	    </header>
+        <main>
+        <img src="{{img}}">
+        <h1>{{title}}</h1>
+        <p>By: {{author}}</p>
+        {{body}}
+        </main>
+        <footer>
+		<p>All Rights Reserved. &copy; 2023 How Do I. </p>
+	</footer>
+    </body>
+</html>
+"""   
+body_template="""
+    <article id="{{heading}}">
+        <h2>{{heading}}</h2>
+        <p>{{text}}</p>
+    </article>
+"""
 def apiCall(input):
     
     openai.api_key = os.environ["yuh"]
@@ -78,4 +118,4 @@ def apiCall(input):
     print("INFO: Api response received")
     
     return vars(response)['_previous']['choices'][0]['message']['content'] #dict version instead of OpenAIObject
-main(5,"C:/Users/zbria/Desktop/howdoi/")
+main(3,"C:/Users/zbria/Desktop/howdoi/")
