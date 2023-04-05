@@ -1,5 +1,6 @@
 import sqlite3
 import os
+import uuid
 from datetime import datetime
 def database():
     
@@ -7,13 +8,18 @@ def database():
     db_path = os.path.join(BASE_DIR, "db.sqlite3")
     conn = sqlite3.connect(db_path)
     cur = conn.cursor()
-    tableName = "d"+str(datetime.now())[:10].replace("-","_")
-    print(tableName)
+    current_date = "d"+str(datetime.now())[:10].replace("-","_")
+    id = uuid.uuid4()
+    print(current_date)
     try:
-        createTable(cur,tableName,"(id INTEGER PRIMARY KEY AUTOINCREMENT,hi TEXT,size INTEGER)")
+        createTable(cur,"main_index","(id CHAR PRIMARY KEY,date TEXT,url TEXT)")
+        createTable(cur,current_date,"(id CHAR PRIMARY KEY,title TEXT,subject TEXT,author TEXT)")
     except:
-        print("Warning: "+tableName +" already exists")
-    insert(cur,tableName,"(hi, size) VALUES ('HELLO', 4)")
+        print("Warning: "+current_date +" already exists")
+    query = "VALUES (\"{}\",\"{}\",\"{}\")".format(id,current_date,"www.yahoo.com")
+    insert(cur,"main_index",query)
+    query = "VALUES (\"{}\",\"{}\",\"{}\",\"{}\")".format(id,"Sports Betting Guide","Sports","Jim")
+    insert(cur,current_date,query)
     conn.commit()
 def createTable(cursor,name,args):
     strBuild = "CREATE TABLE "+name+" "+args
@@ -22,6 +28,7 @@ def insert(cursor,table,values):
     strBuild = "INSERT INTO "+table+" "+values
     print(strBuild)
     cursor.execute(strBuild)
+    
 database()
 
 
