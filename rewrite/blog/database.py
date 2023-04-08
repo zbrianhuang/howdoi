@@ -12,7 +12,7 @@ def database():
     id = uuid.uuid4()
     print(current_date)
     try:
-        createTable(cur,"main_index","(id CHAR PRIMARY KEY,date TEXT,url TEXT)")
+        #createTable(cur,"main_index","(id CHAR PRIMARY KEY,date TEXT,url TEXT)")
         createTable(cur,current_date,"(id CHAR PRIMARY KEY,title TEXT,subject TEXT,author TEXT)")
     except:
         print("Warning: "+current_date +" already exists")
